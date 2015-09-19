@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="taquin.upmf.fr.taquin.MainActivity"
+    android:background="#6a90ffef">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Commencez par choisir un niveau"
+    android:id="@+id/textView"
+    android:background="#2dffffff"
+    android:textIsSelectable="true"
+    style="@style/AppTheme"
+    android:layout_above="@+id/button"
+    android:layout_marginBottom="57dp"
+    android:layout_alignEnd="@+id/button"
+    android:layout_alignParentStart="true"
+    android:textColor="#ff1b50ff"
+    android:textAlignment="center" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Débutant"
+    android:id="@+id/button"
+    android:layout_above="@+id/button2"
+    android:layout_alignStart="@+id/button2"
+    android:layout_alignEnd="@+id/button2"
+    android:background="#ff60d4ff" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Intermédiaire"
+    android:id="@+id/button2"
+    android:background="#ff44b4ff"
+    android:layout_centerVertical="true"
+    android:layout_alignParentStart="true" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Expert"
+    android:id="@+id/button3"
+    android:background="#ff408dff"
+    android:layout_below="@+id/button2"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+</RelativeLayout>
